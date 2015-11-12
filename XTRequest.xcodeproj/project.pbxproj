@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94B263622F2E5A69068BD605 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5DF655BD5D30B4A62506FB /* libPods.a */; };
 		D7E9ADF51BF46131003EA15E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9ADF41BF46131003EA15E /* main.m */; };
 		D7E9ADF81BF46132003EA15E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9ADF71BF46132003EA15E /* AppDelegate.m */; };
 		D7E9ADFB1BF46132003EA15E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9ADFA1BF46132003EA15E /* ViewController.m */; };
@@ -15,6 +16,8 @@
 		D7E9AE031BF46132003EA15E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E9AE011BF46132003EA15E /* LaunchScreen.storyboard */; };
 		D7E9AE0E1BF46132003EA15E /* XTRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9AE0D1BF46132003EA15E /* XTRequestTests.m */; };
 		D7E9AE191BF46132003EA15E /* XTRequestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9AE181BF46132003EA15E /* XTRequestUITests.m */; };
+		D7E9AE2A1BF46174003EA15E /* XTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9AE291BF46174003EA15E /* XTRequest.m */; };
+		D7E9AE2D1BF461B3003EA15E /* ResultParsered.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9AE2C1BF461B3003EA15E /* ResultParsered.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E5DF655BD5D30B4A62506FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E05A06C156929FB42FE7745 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D7E9ADF01BF46131003EA15E /* XTRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9ADF41BF46131003EA15E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7E9ADF61BF46132003EA15E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		D7E9AE141BF46132003EA15E /* XTRequestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTRequestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E9AE181BF46132003EA15E /* XTRequestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTRequestUITests.m; sourceTree = "<group>"; };
 		D7E9AE1A1BF46132003EA15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E9AE281BF46174003EA15E /* XTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTRequest.h; sourceTree = "<group>"; };
+		D7E9AE291BF46174003EA15E /* XTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTRequest.m; sourceTree = "<group>"; };
+		D7E9AE2B1BF461B3003EA15E /* ResultParsered.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultParsered.h; sourceTree = "<group>"; };
+		D7E9AE2C1BF461B3003EA15E /* ResultParsered.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultParsered.m; sourceTree = "<group>"; };
+		EC00AB3E8E455F3CBEF0D29B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B263622F2E5A69068BD605 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1044EF2281D98F5316421248 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E05A06C156929FB42FE7745 /* Pods.debug.xcconfig */,
+				EC00AB3E8E455F3CBEF0D29B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75EFF9812536B68601851896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E5DF655BD5D30B4A62506FB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7E9ADE71BF46131003EA15E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +113,8 @@
 				D7E9AE0C1BF46132003EA15E /* XTRequestTests */,
 				D7E9AE171BF46132003EA15E /* XTRequestUITests */,
 				D7E9ADF11BF46131003EA15E /* Products */,
+				75EFF9812536B68601851896 /* Frameworks */,
+				1044EF2281D98F5316421248 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +133,9 @@
 			children = (
 				D7E9ADF61BF46132003EA15E /* AppDelegate.h */,
 				D7E9ADF71BF46132003EA15E /* AppDelegate.m */,
+				D7E9AE2B1BF461B3003EA15E /* ResultParsered.h */,
+				D7E9AE2C1BF461B3003EA15E /* ResultParsered.m */,
+				D7E9AE271BF46174003EA15E /* XTRequest */,
 				D7E9ADF91BF46132003EA15E /* ViewController.h */,
 				D7E9ADFA1BF46132003EA15E /* ViewController.m */,
 				D7E9ADFC1BF46132003EA15E /* Main.storyboard */,
@@ -140,6 +173,15 @@
 			path = XTRequestUITests;
 			sourceTree = "<group>";
 		};
+		D7E9AE271BF46174003EA15E /* XTRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D7E9AE281BF46174003EA15E /* XTRequest.h */,
+				D7E9AE291BF46174003EA15E /* XTRequest.m */,
+			);
+			path = XTRequest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7E9AE1D1BF46132003EA15E /* Build configuration list for PBXNativeTarget "XTRequest" */;
 			buildPhases = (
+				6A3321572F4D5E18B4FC6006 /* Check Pods Manifest.lock */,
 				D7E9ADEC1BF46131003EA15E /* Sources */,
 				D7E9ADED1BF46131003EA15E /* Frameworks */,
 				D7E9ADEE1BF46131003EA15E /* Resources */,
+				51329FEB866C446D8B4213D1 /* Embed Pods Frameworks */,
+				2B18D11CBC4063EE2FF1485B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +310,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B18D11CBC4063EE2FF1485B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51329FEB866C446D8B4213D1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A3321572F4D5E18B4FC6006 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7E9ADEC1BF46131003EA15E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D7E9ADFB1BF46132003EA15E /* ViewController.m in Sources */,
+				D7E9AE2D1BF461B3003EA15E /* ResultParsered.m in Sources */,
 				D7E9ADF81BF46132003EA15E /* AppDelegate.m in Sources */,
 				D7E9ADF51BF46131003EA15E /* main.m in Sources */,
+				D7E9AE2A1BF46174003EA15E /* XTRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +506,7 @@
 		};
 		D7E9AE1E1BF46132003EA15E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E05A06C156929FB42FE7745 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XTRequest/Info.plist;
@@ -422,6 +518,7 @@
 		};
 		D7E9AE1F1BF46132003EA15E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC00AB3E8E455F3CBEF0D29B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XTRequest/Info.plist;
@@ -498,6 +595,7 @@
 				D7E9AE1F1BF46132003EA15E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7E9AE201BF46132003EA15E /* Build configuration list for PBXNativeTarget "XTRequestTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +604,7 @@
 				D7E9AE221BF46132003EA15E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7E9AE231BF46132003EA15E /* Build configuration list for PBXNativeTarget "XTRequestUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +613,7 @@
 				D7E9AE251BF46132003EA15E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
