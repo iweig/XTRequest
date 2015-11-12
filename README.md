@@ -6,9 +6,10 @@
 * api比较容易扩展
 * 统一参数格式.
 
-parameters , 参数字典. 无论get/post统一传字典即可
-hud , 是否需要显示activityView
-METHOD_REQUEST , 同步中的模式 (get/post).
+* url , 请求地址
+* parameters , 参数字典. 无论get/post统一传字典即可
+* hud , 是否需要显示activityView
+* METHOD_REQUEST , 同步中的模式 (get/post).
 
 
 
@@ -17,7 +18,7 @@ METHOD_REQUEST , 同步中的模式 (get/post).
 + (void)netWorkStatus ;
 ```
 ---
-2.异步get
+2.异步 get / post
 ```
 + (void)GETWithUrl:(NSString *)url
                hud:(BOOL)hud
@@ -25,7 +26,6 @@ METHOD_REQUEST , 同步中的模式 (get/post).
            success:(void (^)(id json))success
               fail:(void (^)())fail ;
 ```
- 异步post
  ```
 + (void)POSTWithUrl:(NSString *)url
                 hud:(BOOL)hud
